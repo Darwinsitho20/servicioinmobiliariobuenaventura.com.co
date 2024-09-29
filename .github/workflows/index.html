@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Inmobiliario Buenaventura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Section */
+        header {
+            background-image: url('https://aqso.net/cms/files/projects/1108NMG/AQSO_nanjun-masterplan_guanyuan_1108NMG_nightview_1-979x596.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        header button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #0056b3;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: #004080;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            background-color: #f9f9f9;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+        }
+
+        .project-item:hover {
+            transform: scale(1.1); /* Aumenta el tamaño del cuadro al pasar el mouse */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar efecto de profundidad */
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .project-item h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #0056b3;
+        }
+
+        .project-item p {
+            font-size: 1em;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #0056b3;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact input, #contact textarea, #contact input[type="submit"] {
+            width: 100%; /* Full width for all inputs, textareas, and button */
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        #contact input[type="submit"] {
+            background-color: white;
+            color: #0056b3;
+            cursor: pointer;
+        }
+
+        #contact input[type="submit"]:hover {
+            background-color: #004080;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            .projects-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>Proyecto Inmobiliario en Buenaventura</h1>
+            <p>Descubre tu nuevo hogar frente al mar</p>
+            <button onclick="scrollToSection('about')">Ver Proyectos</button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Sobre el Proyecto</h2>
+        <p>El proyecto inmobiliario en Buenaventura ofrece un desarrollo urbano moderno, con vistas privilegiadas al mar y la oportunidad de vivir o invertir en una de las ciudades más importantes de la costa pacífica colombiana. Disfruta de la comodidad, seguridad y conectividad que ofrece este increíble lugar.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Proyectos Disponibles</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <img src="https://media.admagazine.com/photos/618a62602f01962557ac405c/16:9/w_2656,h_1494,c_limit/84043.jpg" alt="Proyecto 1">
+                <h3>Residencias Vista al Mar</h3>
+                <p>Departamentos con impresionantes vistas al océano, frente a puertos, con áreas comunes y acceso a la vía interna.</p>
+            </div>
+            <div class="project-item">
+                <img src="https://blog.gebesa.com/hs-fs/hubfs/Blog%20Gebesa/Im%C3%A1genes%20del%20Blog/dise%C3%B1o-de-oficinas-ejecutivas-ejemplo(9).png?width=1999&name=dise%C3%B1o-de-oficinas-ejecutivas-ejemplo(9).png" alt="Proyecto 2">
+                <h3>Oficinas Ejecutivas Buenaventura</h3>
+                <p>Espacios de trabajo modernos en una ubicación privilegiada cerca del puerto.</p>
+            </div>
+            <div class="project-item">
+                <img src="https://d100mj7v0l85u5.cloudfront.net/s3fs-public/2023-02/centro-comercial-mas-grande-de-colombia.jpg" alt="Proyecto 3">
+                <h3>Centro Comercial Pacífico</h3>
+                <p>Un nuevo centro comercial que será el corazón de la actividad comercial en Buenaventura.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="javascript:void(0);" onsubmit="submitForm()">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Proyecto Inmobiliario Buenaventura. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Scroll to section
+        function scrollToSection(section) {
+            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Simulate form submission
+        function submitForm() {
+            alert('Formulario enviado. Nos pondremos en contacto contigo pronto.');
+        }
+    </script>
+
+</body>
+</html>
